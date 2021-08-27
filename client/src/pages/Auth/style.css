@@ -1,0 +1,10 @@
+.eye-container {
+  position: relative;
+}
+.eye {
+  position: absolute;
+  top: 35px;
+  right: 10px;
+  color: rgb(58, 57, 57);
+  cursor: pointer;
+}

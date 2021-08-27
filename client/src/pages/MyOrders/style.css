@@ -1,0 +1,67 @@
+:root {
+  --color: grey;
+}
+
+.MuiTableCell-root,
+.MuiTypography-root {
+  font-family: Poppins, sans-serif !important;
+  color: #28313f !important;
+}
+
+th {
+  font-weight: 800 !important;
+  font-size: 1rem !important;
+}
+.order-id {
+  color: var(--primaryColor) !important;
+  cursor: pointer;
+}
+.order-status-text {
+  font-family: Poppins, sans-serif !important;
+  color: #28313f !important;
+  font-weight: 800 !important;
+}
+
+@media only screen and (device-width: 768px) {
+  .order,
+  .navbar-ipad,
+  .hero-ipad,
+  .card-ipad {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .cart-ipad {
+    padding-left: 0;
+    padding-right: 1rem;
+  }
+  .hero-ipad-text {
+    font-size: 1.15rem;
+  }
+  .cart-ipad-margin {
+    margin-left: 0.75rem;
+  }
+}
+
+@media only screen and (device-width: 1024px) {
+  .order,
+  .navbar-ipad,
+  .hero-ipad,
+  .card-ipad {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .cart-ipad {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+table {
+  position: relative;
+}
+
+th {
+  background: white;
+  position: sticky;
+  top: 0;
+}

@@ -1,0 +1,166 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap");
+
+:root {
+  --primaryColor: #f97316 !important;
+  --textColor: white;
+  --smooth: all 0.1s linear;
+}
+
+/* merge classes */
+.navlink-container {
+  @apply lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto;
+}
+
+.navlink {
+  @apply lg:inline-flex lg:w-auto w-full px-3 py-2 text-white rounded font-semibold mr-6 items-center justify-center;
+}
+
+.input-label {
+  @apply block text-gray-700 text-sm font-bold mb-2;
+}
+
+.input-box {
+  @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight;
+}
+
+.btn {
+  @apply w-full rounded-full text-white font-bold py-2 px-4 focus:outline-none;
+}
+
+/* custom css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: var(--smooth);
+  font-family: Poppins, sans-serif;
+  outline: none;
+}
+
+body,
+.MuiStepper-root {
+  background: #fff7ed !important;
+}
+
+.navbar {
+  background: var(--primaryColor);
+}
+
+.a {
+  cursor: pointer;
+  transition: var(--smooth);
+}
+
+.navlink:hover {
+  background: #ffedd5 !important;
+  color: var(--primaryColor);
+}
+
+.icon {
+  color: white;
+}
+
+.btn-primary,
+.bg-primary {
+  background: var(--primaryColor) !important;
+}
+
+.card-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--primaryColor);
+  color: white;
+}
+
+.cart .cart-basket {
+  font-size: 0.6rem;
+  position: absolute;
+  top: -6px;
+  right: -5px;
+  width: 15px;
+  height: 15px;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.amount {
+  color: var(--primaryColor);
+}
+
+.primary-text {
+  color: var(--primaryColor);
+}
+
+.flexible {
+  flex-grow: 1;
+}
+
+button:focus {
+  outline: none;
+}
+
+input:focus {
+  outline: #f97316 solid !important;
+}
+.checkout-btn {
+  position: relative;
+  display: block;
+  color: #f97316;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  border: 2px solid #f97316;
+  padding: 7px 30px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 1s all ease;
+}
+
+.checkout-btn:hover {
+  color: white;
+  background-color: #f97316;
+}
+.remove-btn {
+  display: none;
+}
+:disabled {
+  cursor: no-drop;
+}
+/* .swal-modal {
+  width: 400px;
+} */
+
+.swal-footer {
+  background-color: #fff7ed;
+  margin-top: 20px;
+  border-top: 1px solid #e9eef1;
+  overflow: hidden;
+}
+
+.swal-button,
+.swal-button:hover {
+  background-color: var(--primaryColor) !important;
+  color: white !important;
+}
+/* styling scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+}
+
+::-webkit-scrollbar-thumb {
+  background: gray;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: gray;
+}
