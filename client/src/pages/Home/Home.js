@@ -1,5 +1,5 @@
 import React from 'react'
-import delivery from '../../SvgIcons/Delivery.svg'
+import delivery from '../../SvgIcons/HomeImage.svg'
 import Menu from './Components/Menu'
 import { motion } from 'framer-motion';
 import { PageAnimation } from '../../utils/PageAnimation';
@@ -19,7 +19,7 @@ const Home = () => {
                     <img src={delivery} alt="delivery" />
                 </div>
             </div>
-            <Menu />
+            {/* <Menu /> */}
         </motion.section>
     )
 }

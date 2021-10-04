@@ -6,7 +6,7 @@ import { Context, initialState } from './utils/context'
 import { reducer } from './utils/reducers'
 import 'react-toastify/dist/ReactToastify.min.css'
 import { ToastContainer } from 'react-toastify'
-
+import Menu from './pages/Home/Components/Menu'
 import ProtectedRoute from './authRoutes/ProtectedRoute'
 import IsAuthenticated from './authRoutes/IsAuthenticate'
 import PrivateRoute from './authRoutes/PrivateRoute'
@@ -56,6 +56,7 @@ function App() {
         <IsAuthenticated path="/signin" exact component={Login} />
         <Route path="/forgot" exact component={ForgotPassword} />
         <Route path="/" exact component={Home} />
+        <Route path="/menu" exact component={Menu} />
       </Switch>
       </AnimatePresence>
     </Context.Provider>

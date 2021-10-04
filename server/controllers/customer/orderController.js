@@ -33,9 +33,15 @@ const orderController = () => {
                             currency: 'inr',
                             payment_method: token,
                             description: `Food order: ${user._id}`,
-                            confirm:true
+                            confirm:true,
+                            // payment_method_options: 'card'
+                           // request_three_d_secure: 'any'
+
                         })
+                        // To trigger 3D Secure manually, set payment_method_options[card][request_three_d_secure] to any when creating or confirming a PaymentIntent
+                        console.log(result);
                     }
+                   
                     const order = new Order({
                         customerId:user._id,
                         items:checkOutDetails.orders,
