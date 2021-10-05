@@ -8,6 +8,8 @@ import {PageAnimation} from '../utils/PageAnimation'
 
 const Navbar = () => {
 
+
+  const [darkMode, SetDarkMode] = useState(false)
   const [state,dispatch] = useContext(Context)
 
   const [isOpen, setIsOpen] = useState(true)
@@ -45,6 +47,8 @@ const Navbar = () => {
                         {state?.cartItems.length || 0}
                       </span>
                     </Link>
+                    {/* <span className=" ml-5 item-center" style={{color: 'white'}}>☽</span>
+                    <span className=" ml-7 item-center" style={{color: 'yellow'}}>︎☀</span> */}
                 </div>
             </div>
         </nav>

@@ -164,3 +164,17 @@ input:focus {
 ::-webkit-scrollbar-thumb:hover {
   background: gray;
 }
+
+.toggle{
+  position: absolute;
+  top: 20px;
+  right:20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+}
