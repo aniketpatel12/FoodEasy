@@ -74,7 +74,7 @@ const CheckoutForm = ({checkOutDetails}) => {
         </div>
         <div className="mb-4 mx-4">
             <button className={`mt-10 w-full checkout-btn btn3`} onClick={handleSubmit}>
-                {`Pay ${checkOutDetails?.TotalPrice}`}
+                {`Pay ${checkOutDetails?.TotalPrice}`}  
             </button>
         </div>
       </>
