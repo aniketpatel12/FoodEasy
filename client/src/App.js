@@ -24,6 +24,7 @@ import Checkout from './pages/Checkout/Checkout'
 import MyProfile from './pages/MyProfile/MyProfile'
 import ForgotPassword from './pages/Auth/ForgotPassword/ForgotPassword'
 import Contact from './pages/Auth/Contact/Contact'
+import About from './pages/About/About'
 
 
 function App() {
@@ -57,6 +58,7 @@ function App() {
         <Route path="/forgot" exact component={ForgotPassword} />
         <Route path="/" exact component={Home} />
         <Route path="/menu" exact component={Menu} />
+        <Route path="/about" exact component={About}/>
       </Switch>
       </AnimatePresence>
     </Context.Provider>

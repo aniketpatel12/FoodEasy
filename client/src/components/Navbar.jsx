@@ -39,7 +39,7 @@ const Navbar = () => {
                         <Link to='/signin' onClick={() => setIsOpen(!isOpen)} className="navlink"><span>Sign In</span></Link>
                       </>
                     }
-                    
+                    <Link to='/about' onClick={() => setIsOpen(!isOpen)} className="navlink"><span>About Us</span></Link>
                     <Link to='/contact' onClick={() => setIsOpen(!isOpen)} className="navlink"><span>Contact Us</span></Link>
                     <Link to="/cart" onClick={() => setIsOpen(!isOpen)} className="cart relative inline-flex cart-ipad-margin ml-3 mt-2 md:ml-0 md:mt-0">
                       <CartIcon stroke="#fff" classes="h-6 w-6" />
