@@ -5,7 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap");
 
 :root {
-  --primaryColor: #f97316 !important;
+  --primaryColor: #407BFF !important;
   --textColor: white;
   --smooth: all 0.1s linear;
 }
@@ -57,8 +57,8 @@ body,
 }
 
 .navlink:hover {
-  background: #ffedd5 !important;
-  color: var(--primaryColor);
+  background: #140c01 !important;
+  color: #fff;
 }
 
 .icon {
@@ -163,4 +163,18 @@ input:focus {
 
 ::-webkit-scrollbar-thumb:hover {
   background: gray;
+}
+
+.toggle{
+  position: absolute;
+  top: 20px;
+  right:20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
 }

@@ -8,6 +8,8 @@ import {PageAnimation} from '../utils/PageAnimation'
 
 const Navbar = () => {
 
+
+  const [darkMode, SetDarkMode] = useState(false)
   const [state,dispatch] = useContext(Context)
 
   const [isOpen, setIsOpen] = useState(true)
@@ -27,6 +29,7 @@ const Navbar = () => {
             <div className={`${isOpen ? 'hidden':'' } w-full lg:inline-flex lg:flex-grow lg:w-auto`}>
                 <div className="navlink-container">
                     <Link to='/' onClick={() => setIsOpen(!isOpen)} className="navlink"><span>Home</span></Link>
+                    <Link to='/menu' onClick={() => setIsOpen(!isOpen)} className="navlink"><span>Menu</span></Link>
                     { 
                       state.user.username ?<>
                         <Link to='/orders'  onClick={() => setIsOpen(!isOpen)} className="navlink"><span>My Orders</span></Link>
@@ -36,6 +39,7 @@ const Navbar = () => {
                         <Link to='/signin' onClick={() => setIsOpen(!isOpen)} className="navlink"><span>Sign In</span></Link>
                       </>
                     }
+                    
                     <Link to='/contact' onClick={() => setIsOpen(!isOpen)} className="navlink"><span>Contact Us</span></Link>
                     <Link to="/cart" onClick={() => setIsOpen(!isOpen)} className="cart relative inline-flex cart-ipad-margin ml-3 mt-2 md:ml-0 md:mt-0">
                       <CartIcon stroke="#fff" classes="h-6 w-6" />
@@ -43,6 +47,8 @@ const Navbar = () => {
                         {state?.cartItems.length || 0}
                       </span>
                     </Link>
+                    {/* <span className=" ml-5 item-center" style={{color: 'white'}}>☽</span>
+                    <span className=" ml-7 item-center" style={{color: 'yellow'}}>︎☀</span> */}
                 </div>
             </div>
         </nav>

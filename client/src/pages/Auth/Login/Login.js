@@ -82,7 +82,7 @@ const Login = () => {
                     </Link>
                 </div>
                 </form>
-                <p className="text-center text-gray-500 text-xs">&copy;2021 FoodEasy. All rights reserved.</p>
+                <p className="text-center text-gray-500 text-xs">&copy;2021 FoodEasy.  All rights reserved.</p>
             </div>
         </motion.section>
     )
